@@ -7,6 +7,7 @@ import { PrerequisiteComponent } from './prerequisite/prerequisite.component';
 import { MultipleSelectComponent } from './dropdown/multiple-select/multiple-select.component';
 import { SimpleAutocompleteComponent } from './autocomplete/simple-autocomplete/simple-autocomplete.component';
 import { AccordionComponent } from './accordion/accordion.component';
+import {TextinputComponent } from './user-input/textinput/textinput.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'accordion', component: AccordionComponent },
   { path: 'form', loadChildren: './form-validation/form-validation.module#FormValidationModule' },
   { path: '**', component: PageNotFoundComponent },
+  { path: 'user-input/textinput', component: TextinputComponent},
 ];
 
 @NgModule({
