@@ -18,8 +18,10 @@ const routes: Routes = [
   { path: 'autocomplete/simple-autocomplete', component: SimpleAutocompleteComponent },
   { path: 'accordion', component: AccordionComponent },
   { path: 'form', loadChildren: './form-validation/form-validation.module#FormValidationModule' },
-  { path: '**', component: PageNotFoundComponent },
   { path: 'user-input/textinput', component: TextinputComponent},
+  { path: '**', component: PageNotFoundComponent },
+  
+  
 ];
 
 @NgModule({

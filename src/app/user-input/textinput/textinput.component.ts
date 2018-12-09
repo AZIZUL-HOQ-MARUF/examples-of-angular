@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./textinput.component.css']
 })
 export class TextinputComponent implements OnInit {
+  title = 'Text Input first'
 
   constructor() { }
 
