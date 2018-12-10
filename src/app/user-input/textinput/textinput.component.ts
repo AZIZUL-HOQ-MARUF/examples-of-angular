@@ -12,10 +12,36 @@ export class TextinputComponent implements OnInit {
 
   constructor() { }
 
+  isKeyUp = false 
+  isBlur =false
+  isMouseenter= false
+  isClick= false
+  isDoubleClick= false
+
   ngOnInit() {
   }
+
   onClick(){
-    alert("stated typing")
+    this.isClick = true
+  }
+
+  value = ''
+  onKeyUp(evt : any){
+    this.isKeyUp = true
+    this.value = evt.target.value 
+  }
+
+  onBlur(evt : any){
+
+    this.isBlur = true
+
+  }
+  onMouseenter(evt : any){
+    this.isMouseenter =true
+
+  }
+  onDoubleClick(evt : any){
+    this.isDoubleClick =true
   }
 
 }
