@@ -7,15 +7,15 @@ import { Model } from '../model/Model';
   styleUrls: ['./textinput.component.css']
 })
 export class TextinputComponent implements OnInit {
-  title = 'Text Input first'
-  model:Model = {
-    id : 1,
-    name: 'Maruf'
-  }
+  title = 'Simple Text Input';
+  model:Model =  new Model(2,"Maruf","12345");
 
   constructor() { }
 
   ngOnInit() {
+  }
+  onClick(){
+    alert("stated typing")
   }
 
 }

@@ -36,6 +36,7 @@ export class SimpleSelectComponent implements OnInit {
   onChangeSingleCar(car){
     this.singleCarSelect = this.cars.find(x => x.id == car).brand;
     this.selectedCar = this.singleCarSelect ;
+    this.cars.find
   }
   isFocus = false;
   isBlur = false;
