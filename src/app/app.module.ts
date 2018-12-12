@@ -18,6 +18,7 @@ import { ClickOutsideDirective } from './directives/click.outside.directive';
 import { AccordionComponent } from './accordion/accordion.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TextinputComponent } from './user-input/textinput/textinput.component';
+import { EmailinputComponent } from './user-input/emailinput/emailinput.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,8 @@ import { TextinputComponent } from './user-input/textinput/textinput.component';
     SearchFilterPipe,
     ClickOutsideDirective,
     AccordionComponent,
-    TextinputComponent
+    TextinputComponent,
+    EmailinputComponent
   ],
   imports: [
     BrowserModule,
