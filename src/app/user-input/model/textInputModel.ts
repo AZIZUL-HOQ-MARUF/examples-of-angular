@@ -1,4 +1,4 @@
-export class Model{
+export class textInputModel{
     id: number
     name: String
     password : string

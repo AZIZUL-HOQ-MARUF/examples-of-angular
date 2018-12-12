@@ -8,6 +8,7 @@ import { MultipleSelectComponent } from './dropdown/multiple-select/multiple-sel
 import { SimpleAutocompleteComponent } from './autocomplete/simple-autocomplete/simple-autocomplete.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import {TextinputComponent } from './user-input/textinput/textinput.component';
+import {EmailinputComponent } from './user-input/emailinput/emailinput.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'accordion', component: AccordionComponent },
   { path: 'form', loadChildren: './form-validation/form-validation.module#FormValidationModule' },
   { path: 'user-input/textinput', component: TextinputComponent},
+  { path: 'user-input/emailinput', component: EmailinputComponent},
   { path: '**', component: PageNotFoundComponent },
   
   
