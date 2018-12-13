@@ -1,62 +1,50 @@
- 
 <div class="row">
   <div class="col-md-6">
     <h5>{{title}} </h5>
-     
-    <hr/>
+
+    <hr />
     <form novalidate>
       <div class="form-group">
         <label for="exampleInputText">Enter Name</label>
-        <input 
-        type="email"  
-           
-        class="form-control" 
-        id="exampleInputText" 
-        aria-describedby="TextHelp" 
-        name="textInput" 
-        placeholder="Enter your name"
-        (click)="onClick()"
-        (keyup)= "onKeyUp($event)"
-        (blur)="onBlur($event)"
-        (mouseenter)="onMouseenter($event)"
-        (dblclick)="onDoubleClick($event)"
-        >
-        </div>
-    
+        <input type="text" class="form-control" id="exampleInputText" aria-describedby="TextHelp" name="textInput"
+          placeholder="Enter your name" (click)="onClick()" (keyup)="onKeyUp($event)" (blur)="onBlur($event)"
+          (mouseenter)="onMouseenter($event)" (dblclick)="onDoubleClick($event)">
+      </div>
+
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
-</div> 
+</div>
 <div class="row">
   <div class="col-12">
-      <div class="card">
-        <div class="card-body">
-          <h5>Output 
-          </h5>
-          <hr>
-          <p *ngIf="isKeyUp">Output of <strong>onKeyUp() </strong> is {{ value }}</p> 
-          <p *ngIf="isBlur">Output of <strong>onBlur() </strong> is : On Blured</p>
-          <p *ngIf="isMouseenter">Output of <strong>onMouseenter() </strong> is : You Mouse Entered</p>
-          <p *ngIf="isClick">Output of <strong>onClick() </strong> is : You clicked Input Field</p>
-          <p *ngIf="isDoubleClick">Output of <strong>onDoubleClick() </strong> is : You Double Clicked the Input Field</p>
-        </div>
-      </div>
-  </div>
-</div>
-<br/>
-<div class="row">
-    <div class="col-12">
-      <div class="card">
-        <div class="card-body">
-          <h5>Description</h5>
-          <hr>
-          <p>This is the very basic Text Input of angular.</p>
-          <p><strong>onKeyUp()</strong> - Text Input keyUp event</p>
-          <p><strong>onBlur()</strong> - Text Input blur event</p>
-          <p><strong>onMouseenter()</strong> - Text Input mouseenter event</p>
-          <p><strong>onClick()</strong> - Text Input click event</p>
-          <p><strong>onDoubleClick()</strong> - Text Input double click event</p>
-        </div>
+    <div class="card">
+      <div class="card-body">
+        <h5>Output
+        </h5>
+        <hr>
+        <p *ngIf="isKeyUp">Output of <strong>onKeyUp() </strong> is {{ value }}</p>
+        <p *ngIf="isBlur">Output of <strong>onBlur() </strong> is : On Blured</p>
+        <p *ngIf="isMouseenter">Output of <strong>onMouseenter() </strong> is : You Mouse Entered</p>
+        <p *ngIf="isClick">Output of <strong>onClick() </strong> is : You clicked Input Field</p>
+        <p *ngIf="isDoubleClick">Output of <strong>onDoubleClick() </strong> is : You Double Clicked the Input Field</p>
       </div>
     </div>
   </div>
+</div>
+<br />
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h5>Description</h5>
+        <hr>
+        <p>This is the very basic Text Input of angular.</p>
+        <p><strong>onKeyUp()</strong> - Text Input keyUp event</p>
+        <p><strong>onBlur()</strong> - Text Input blur event</p>
+        <p><strong>onMouseenter()</strong> - Text Input mouseenter event</p>
+        <p><strong>onClick()</strong> - Text Input click event</p>
+        <p><strong>onDoubleClick()</strong> - Text Input double click event</p>
+      </div>
+    </div>
+  </div>
+</div>

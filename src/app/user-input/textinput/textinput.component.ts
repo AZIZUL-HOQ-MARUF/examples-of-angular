@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'; 
-import { Model } from '../model/Model';
+import { textInputModel } from '../model/textInputModel';
 
 @Component({
   selector: 'app-textinput',
@@ -8,7 +8,7 @@ import { Model } from '../model/Model';
 })
 export class TextinputComponent implements OnInit {
   title = 'Simple Text Input';
-  model:Model =  new Model(2,"Maruf","12345");
+  model:textInputModel =  new textInputModel(2,"Maruf","12345");
 
   constructor() { }
 
